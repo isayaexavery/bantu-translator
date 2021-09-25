@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.namsweatech.translate.Welcome">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/internet_error"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/note_about"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/tryAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/grey_600"
+            android:text="Try Again"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/start_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:padding="2dp"
+            android:text="@string/bantu"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:typeface="sans"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:padding="2dp"
+            android:text="@string/translator"
+            android:textColor="@color/grey_600"
+            android:textSize="30sp"
+            android:typeface="sans"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

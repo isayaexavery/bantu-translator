@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".AddWordActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:padding="3dp"
+            android:text="Language From "
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fromTribeHead"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/but_arrow"
+            android:layout_toLeftOf="@id/but_arrow"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_input"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/fromTribeTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:text="Choose"
+                android:requiresFadingEdge="horizontal"
+                android:spinnerMode="dialog" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:padding="3dp"
+            android:text="To Language"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/toTribeHead"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/but_arrow"
+            android:layout_toLeftOf="@id/but_arrow"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_input"
+             >
+
+            <AutoCompleteTextView
+                android:id="@+id/toTribeTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:text="Choose"
+                android:requiresFadingEdge="horizontal"
+                android:spinnerMode="dialog" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wordInTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:padding="3dp"
+                android:text="Enter a Word"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wordTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_input"
+                android:hint="word"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/descriptionsTv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_input"
+        android:gravity="start"
+        android:hint="Descriptions"
+        android:inputType="textCapSentences|textMultiLine"
+        android:minHeight="10dp"
+        android:paddingStart="5dp" />
+
+
+    <Button
+        android:id="@+id/but_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/edittext_input"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Add"
+        android:textAllCaps="true" />
+
+</LinearLayout>

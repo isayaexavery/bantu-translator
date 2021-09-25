@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Bantu Translator</string>
+    <string name="bantu">Bantu</string>
+    <string name="translator">Translator</string>
+    <string name="translate">Translate</string>
+    <string name="type_input">Type or paste some text</string>
+    <string name="note_about">Check internet connection and try again.</string>
+    <string name="swahili">Swahili</string>
+    <string name="english">English</string>
+    <string name="internet_error">No Internet</string>
+    <string name="digits_word_limit">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
